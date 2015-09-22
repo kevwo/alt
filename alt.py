@@ -154,7 +154,7 @@ class Test:
                                                   'Passed' if self.test_passed is True else 'Failed')
 
 
-class AltTestRunner:
+class AltRunner:
     def __init__(self, test_data, logger=None):
         self.test_data = test_data
         if logger is None:
