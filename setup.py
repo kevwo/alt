@@ -13,6 +13,7 @@ setup(name='alt',
       py_modules=['alt'],
       description='Web API level tests and testrunner',
       author='Kevin Woodmansee',
+      author_email='kevinwoodmansee@gmail.com',
       license='MIT',
       long_description=long_description,
       install_requires=['requests']
