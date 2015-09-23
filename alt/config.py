@@ -9,7 +9,8 @@ class AbsoluteConfigFactory(object):
             with open(file, 'r') as fin:
                     data += fin.read() + '\n'
         self.secrets = data
-        self.secret_keys = [] if keep_secrets else yaml.load(data).keys()
+        loaded = yaml.load(data)
+        self.secret_keys = [] if keep_secrets or loaded is None else loaded.keys()
 
     def get(self, file):
         if not hasattr(self, file):
@@ -20,6 +21,7 @@ class AbsoluteConfigFactory(object):
                 decoded_yaml.pop(key, None)
             setattr(self, file, decoded_yaml)
         return getattr(self, file)
+
 
 class ConfigFactory(AbsoluteConfigFactory):
     def __init__(self, basedir, *secret_files, keep_secrets=False):

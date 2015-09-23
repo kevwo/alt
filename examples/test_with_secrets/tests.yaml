@@ -1,0 +1,13 @@
+global:
+    default_args: &default_args
+        url: https://github.com/kevwo
+        method: GET
+        expected_response_code: 200
+        api_key: *secrets_default_api_key
+test_suites:
+  - module_name: test_code
+    class_name: SampleSimpleTest
+    tests:
+      - name: simple_test
+        data_points:
+          - <<: *default_args  #this just runs with default args
