@@ -9,14 +9,26 @@ Starting AltRunner...
 Starting test: #1.1 SampleSimpleTest simple_test - Not Executed
 Sending GET to url: https://github.com/kevwo
 Received response code: 200
-Finished test: #1.1 SampleSimpleTest simple_test - (1.40s) Result: Passed
+Finished test: #1.1 SampleSimpleTest simple_test - (0.61s) Result: Passed
+======================================================================
+Starting test: #1.2 SampleSimpleTest simple_test - Not Executed
+Sending GET to url: https://github.com/kevwo/alt/tree/master/examples
+Received response code: 200
+Finished test: #1.2 SampleSimpleTest simple_test - (0.30s) Result: Passed
+======================================================================
+Starting test: #1.3 SampleSimpleTest simple_test - Not Executed
+Sending GET to url: https://github.com/kevwo/badurl
+Received response code: 404
+Finished test: #1.3 SampleSimpleTest simple_test - (0.28s) Result: Passed
 ======================================================================
 ======================================================================
-1/1 Passed:
-#1.1 SampleSimpleTest simple_test - (1.40s) Result: Passed
+3/3 Passed:
+#1.1 SampleSimpleTest simple_test - (0.61s) Result: Passed
+#1.2 SampleSimpleTest simple_test - (0.30s) Result: Passed
+#1.3 SampleSimpleTest simple_test - (0.28s) Result: Passed
 ======================================================================
-0/1 Failed:
+0/3 Failed:
 ======================================================================
-0/1 Skipped:
+0/3 Skipped:
 ======================================================================
-Elapsed time: 1.41s
+Elapsed time: 1.22s

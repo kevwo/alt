@@ -11,10 +11,11 @@ packages = [
 ]
 
 setup(name='alt',
-      version='0.0.2',
+      version='0.0.3',
       url='https://github.com/kevwo/alt',
       zip_safe=False,
       packages=packages,
+      package_data={'alt': ['skeleton/*.*']},
       package_dir={'alt': 'alt'},
       description='Web API level tests and test runner',
       author='Kevin Woodmansee',
