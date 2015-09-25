@@ -6,11 +6,20 @@ Test your web api with minimal effort.
 pip install alt
 ```
 
-###Common use cases:
-* Rather than dev testing with a series of commands, write a test once and call repeatedly
+###Why alt?:
+* Rather than dev testing with a series of commands, write a test once and reuse infinitely
 * Write an entire test suite for integration testing your web api. Both localhost or on a development server
 * Practice test driven development and write your test before your api
 * Extension on unit testing and run the web api tests before merging code.
+
+##Batteries included! Jump in & run sample code!
+Running this command will generate a directory "skeleton" in your current directory and populate it with __fully functional__ code (tests, test data, and test runner). Just modify this skeleton to fit your need!
+```python
+import alt
+alt.get_skeleton()
+```
+
+##Want to learn more??:
 
 ###Tests are simple to write:
 
