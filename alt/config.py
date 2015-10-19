@@ -24,9 +24,10 @@ class AbsoluteConfigFactory(object):
 
 
 class ConfigFactory(AbsoluteConfigFactory):
-    def __init__(self, basedir, *secret_files, keep_secrets=False):
+    def __init__(self, basedir, *secret_files, keep_secrets=False, secrets_absolute_path=False):
         self.basedir = basedir
-        secret_files = [self.format_path(file) for file in secret_files]
+        if not secrets_absolute_path:
+            secret_files = [self.format_path(file) for file in secret_files]
         super().__init__(*secret_files, keep_secrets=keep_secrets)
 
     def get(self, file):

@@ -11,7 +11,7 @@ packages = [
 ]
 
 setup(name='alt',
-      version='0.0.3',
+      version='0.0.4',
       url='https://github.com/kevwo/alt',
       zip_safe=False,
       packages=packages,
